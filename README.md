@@ -1,30 +1,18 @@
 # SemEval2023
 ## Task 10: Towards Explainable Detection of Online Sexism
 
-### Preprocessing:
-- Convert hashtags (#HappyBirthday -> happy birthday)
-- Replace emoji with description
-- Tokenize -- data is taken from Gab + Reddit. Is TweetTokenizer better than NLTK?
-- Lowercase all
-- Remove punctuation
-- Remove stop words
-- Stem words -- WordNet stemmer (NLTK) requires POS-pairs. Better than Porter & Lancaster as they destroy too many sentiment distinctions
-- To try: Negation marking (Das and Chen 2001, Pang et al. 2002) -- Append a _NEG suffix to every word appearing between a negation and a clause-level punctuation mark
-    ex 1: no one*_NEG* enjoys*_NEG* it*_NEG*.
-    ex 2:I don't think*_NEG* i*_NEG* will*_NEG* enjoy*_NEG* it*_NEG*, but I might. 
+Competition: https://codalab.lisn.upsaclay.fr/competitions/7124#participate
 
+Presentation: https://1drv.ms/p/s!Asik16MmOFde8CXjYjSV22vdvUaH?e=Lnt6Ty
 
-### Embeddings:
-- TfIdf vs. Word2vec vs. GloVe
+Documentation: https://www.overleaf.com/read/prmhszjmmrzh
 
+### Colab links
 
-### RNN:
-- GRU vs. LSTM vs. BiLSTM
+Exploratory Data Analysis: https://colab.research.google.com/drive/1lqzpvPR3_1r38HvFQWLb_PDBz6xpj7E9?usp=sharing
 
+Baseline: https://colab.research.google.com/drive/19OHkv6H9z5aaU5GX8LUoo3TR2k9AzlUb?usp=sharing
 
-### Transformers:
-- DynaSent: http://www.github.com/cgpotts/dynasent
+Neural Network: https://colab.research.google.com/drive/1b4OIYYuPSfq008xDDTOV2N1KYg9cAJ3o?usp=sharing
 
-
-Link colab SVM: https://colab.research.google.com/drive/19OHkv6H9z5aaU5GX8LUoo3TR2k9AzlUb?usp=sharing
-Link colab RNN: https://colab.research.google.com/drive/1b4OIYYuPSfq008xDDTOV2N1KYg9cAJ3o?usp=sharing
+Preprocessings + FastText: https://colab.research.google.com/drive/1RzZ1urAeZqYpLg0FjKC_EQvBNvL825cI?usp=sharing
